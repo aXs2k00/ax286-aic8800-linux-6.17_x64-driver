@@ -1,0 +1,18 @@
+# Editor
+.vscode/
+
+# Removed Android-only test utilities (ignore any leftover local artifacts)
+aicrf_test/
+
+# Kernel module build artifacts
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+modules.order
+Module.symvers
+.tmp_versions/
+.*.cmd
+*.cmd
+
