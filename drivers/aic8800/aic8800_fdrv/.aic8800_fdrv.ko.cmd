@@ -1,0 +1,1 @@
+savedcmd_aic8800_fdrv/aic8800_fdrv.ko := x86_64-linux-gnu-ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.17.10+kali-amd64/arch/x86/module.lds -o aic8800_fdrv/aic8800_fdrv.ko aic8800_fdrv/aic8800_fdrv.o aic8800_fdrv/aic8800_fdrv.mod.o .module-common.o

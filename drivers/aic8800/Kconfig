@@ -1,0 +1,31 @@
+menuconfig AIC_WLAN_SUPPORT
+    bool "AIC8800 Wireless LAN support"
+    depends on MAC80211 && WLAN
+    default n
+    help
+      Enable support for AIC8800 series wireless chips. 
+      This includes support for SDIO, USB, and PCIe interfaces 
+      depending on the specific hardware revision.
+
+if AIC_WLAN_SUPPORT
+
+# Core Driver Configuration
+source "drivers/net/wireless/aic8800/aic8800_fdrv/Kconfig"
+
+# Firmware Loader (Required for AIC chips to initialize)
+source "drivers/net/wireless/aic8800/aic_load_fw/Kconfig"
+
+# Optional: Add Bus Selection here if not in sub-Kconfigs
+config AIC8800_USB
+    bool "AIC8800 USB interface support"
+    depends on USB
+    help
+      Select this if your AIC8800 chip is connected via USB.
+
+config AIC8800_SDIO
+    bool "AIC8800 SDIO interface support"
+    depends on MMC
+    help
+      Select this if your AIC8800 chip is connected via SDIO/MMC.
+
+endif # AIC_WLAN_SUPPORT

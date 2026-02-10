@@ -1,0 +1,411 @@
+<font color="#57E389">┌──(</font><font color="#277FFF"><b>syn2k㉿redb0x</b></font><font color="#57E389">)-[</font><b>~</b><font color="#57E389">]</font>
+<font color="#57E389">└─</font><font color="#277FFF"><b>$</b></font> nano browse.py
+
+<font color="#57E389">┌──(</font><font color="#277FFF"><b>syn2k㉿redb0x</b></font><font color="#57E389">)-[</font><b>~</b><font color="#57E389">]</font>
+<font color="#57E389">└─</font><font color="#277FFF"><b>$</b></font> python browse.py
+  File <font color="#661FAE">&quot;/home/syn2k/browse.py&quot;</font>, line <font color="#661FAE">1</font>
+    ```python
+<font color="#8900FF"><b>IndentationError</b></font>: <font color="#661FAE">unexpected indent</font>
+
+<font color="#57E389">┌──(</font><font color="#277FFF"><b>syn2k㉿redb0x</b></font><font color="#57E389">)-[</font><b>~</b><font color="#57E389">]</font>
+<font color="#57E389">└─</font><font color="#277FFF"><b>$</b></font> cd /AIC8800/drivers/aic8800 &amp;&amp; make clean &amp;&amp; make -j&quot;$(nproc)&quot;
+cd aic_load_fw/;make clean;cd ..
+make[1]: Entering directory &apos;/AIC8800/drivers/aic8800/aic_load_fw&apos;
+rm -rf *.o *.ko *.o.* *.mod.* modules.* Module.* .a* .o* .*.o.* *.mod .tmp* .cache.mk
+make[1]: Leaving directory &apos;/AIC8800/drivers/aic8800/aic_load_fw&apos;
+cd aic8800_fdrv/;make clean;cd ..
+make[1]: Entering directory &apos;/AIC8800/drivers/aic8800/aic8800_fdrv&apos;
+rm -rf *.o *.ko *.o.* *.mod.* modules.* Module.* .a* .o* .*.o.* *.mod .tmp* .cache.mk
+make[1]: Leaving directory &apos;/AIC8800/drivers/aic8800/aic8800_fdrv&apos;
+rm -rf modules.order Module.symvers .tmp_versions/
+make -C /lib/modules/6.17.10+kali-amd64/build M=/AIC8800/drivers/aic8800 ARCH=x86_64 CROSS_COMPILE= modules
+make[1]: Entering directory &apos;/usr/src/linux-headers-6.17.10+kali-amd64&apos;
+make[2]: Entering directory &apos;/AIC8800/drivers/aic8800&apos;
+  CC [M]  aic8800_fdrv/rwnx_msg_tx.o
+  CC [M]  aic_load_fw/aic_bluetooth_main.o
+  CC [M]  aic8800_fdrv/rwnx_msg_rx.o
+  CC [M]  aic_load_fw/aicbluetooth.o
+  CC [M]  aic8800_fdrv/rwnx_utils.o
+  CC [M]  aic_load_fw/aicwf_usb.o
+  CC [M]  aic8800_fdrv/rwnx_cmds.o
+  CC [M]  aic_load_fw/aic_txrxif.o
+<b>aic_load_fw/aicbluetooth.c:190:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aic_bt_platform_init</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  190 | int <font color="#8900FF"><b>aic_bt_platform_init</b></font>(struct aic_usb_dev *usbdev)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:198:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aic_bt_platform_deinit</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  198 | void <font color="#8900FF"><b>aic_bt_platform_deinit</b></font>(struct aic_usb_dev *usbdev)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:387:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_plat_bin_fw_upload_android</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  387 | int <font color="#8900FF"><b>rwnx_plat_bin_fw_upload_android</b></font>(struct aic_usb_dev *usbdev, u32 fw_addr,
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:656:10:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_atoli</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  656 | uint32_t <font color="#8900FF"><b>rwnx_atoli</b></font>(char *value){
+      |          <font color="#8900FF"><b>^~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:688:8:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_atoi</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  688 | int8_t <font color="#8900FF"><b>rwnx_atoi</b></font>(char *value){
+      |        <font color="#8900FF"><b>^~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:718:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>get_fw_path</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  718 | void <font color="#8900FF"><b>get_fw_path</b></font>(char* fw_path){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:726:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>set_testmode</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  726 | void <font color="#8900FF"><b>set_testmode</b></font>(int val){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:730:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>get_testmode</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  730 | int <font color="#8900FF"><b>get_testmode</b></font>(void){
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:734:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>get_hardware_info</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  734 | int <font color="#8900FF"><b>get_hardware_info</b></font>(void){
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:746:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>get_userconfig_xtal_cap</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  746 | void <font color="#8900FF"><b>get_userconfig_xtal_cap</b></font>(xtal_cap_conf_t *xtal_cap)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:759:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>get_userconfig_txpwr_idx</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  759 | void <font color="#8900FF"><b>get_userconfig_txpwr_idx</b></font>(txpwr_idx_conf_t *txpwr_idx){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:786:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>get_userconfig_txpwr_ofst</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  786 | void <font color="#8900FF"><b>get_userconfig_txpwr_ofst</b></font>(txpwr_ofst_conf_t *txpwr_ofst){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:809:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_plat_userconfig_set_value</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  809 | void <font color="#8900FF"><b>rwnx_plat_userconfig_set_value</b></font>(char *command, char *value){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:857:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_plat_userconfig_parsing</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  857 | void <font color="#8900FF"><b>rwnx_plat_userconfig_parsing</b></font>(char *buffer, int size){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:921:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_plat_userconfig_upload_android</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  921 | int <font color="#8900FF"><b>rwnx_plat_userconfig_upload_android</b></font>(char *filename){
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:952:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicbt_patch_table_free</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  952 | int <font color="#8900FF"><b>aicbt_patch_table_free</b></font>(struct aicbt_patch_table **head)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:980:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicbt_patch_table_load</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  980 | int <font color="#8900FF"><b>aicbt_patch_table_load</b></font>(struct aic_usb_dev *usbdev, struct aicbt_patch_table *_head)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicbluetooth.c:1021:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_plat_bin_fw_patch_table_upload_android</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1021 | int <font color="#8900FF"><b>rwnx_plat_bin_fw_patch_table_upload_android</b></font>(struct aic_usb_dev *usbdev, char *filename){
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_msg_tx.c:171:18:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_cmd_malloc</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  171 | struct rwnx_cmd *<font color="#8900FF"><b>rwnx_cmd_malloc</b></font>(void){
+      |                  <font color="#8900FF"><b>^~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_msg_tx.c:200:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_cmd_free</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  200 | void <font color="#8900FF"><b>rwnx_cmd_free</b></font>(struct rwnx_cmd *cmd){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_msg_tx.c:210:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_init_cmd_array</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  210 | int <font color="#8900FF"><b>rwnx_init_cmd_array</b></font>(void){
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_msg_tx.c:225:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_free_cmd_array</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  225 | void <font color="#8900FF"><b>rwnx_free_cmd_array</b></font>(void){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_utils.c:23:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_init_aic</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+   23 | int <font color="#8900FF"><b>rwnx_init_aic</b></font>(struct rwnx_hw *rwnx_hw)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_cmds.c:298:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>cmd_mgr_task_process</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  298 | void <font color="#8900FF"><b>cmd_mgr_task_process</b></font>(struct work_struct *work)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_msg_rx.c:996:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_cfg80211_unlink_bss</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  996 | void <font color="#8900FF"><b>rwnx_cfg80211_unlink_bss</b></font>(struct rwnx_hw *rwnx_hw, struct rwnx_vif *rwnx_vif){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_msg_tx.c:</b> In function ‘<b>rwnx_send_add_if</b>’:
+<b>aic8800_fdrv/rwnx_msg_tx.c:617:31:</b> <font color="#8900FF"><b>warning: </b></font>this statement may fall through [<font color="#8900FF"><b>-Wimplicit-fallthrough=</b></font>]
+  617 |         <font color="#8900FF"><b>add_if_req_param-&gt;p2p = true</b></font>;
+      |         <font color="#8900FF"><b>~~~~~~~~~~~~~~~~~~~~~~^~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_msg_tx.c:620:5:</b> <font color="#65E6F6"><b>note: </b></font>here
+  620 |     <font color="#65E6F6"><b>case</b></font> NL80211_IFTYPE_STATION:
+      |     <font color="#65E6F6"><b>^~~~</b></font>
+<b>aic8800_fdrv/rwnx_msg_tx.c:630:31:</b> <font color="#8900FF"><b>warning: </b></font>this statement may fall through [<font color="#8900FF"><b>-Wimplicit-fallthrough=</b></font>]
+  630 |         <font color="#8900FF"><b>add_if_req_param-&gt;p2p = true</b></font>;
+      |         <font color="#8900FF"><b>~~~~~~~~~~~~~~~~~~~~~~^~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_msg_tx.c:633:5:</b> <font color="#65E6F6"><b>note: </b></font>here
+  633 |     <font color="#65E6F6"><b>case</b></font> NL80211_IFTYPE_AP:
+      |     <font color="#65E6F6"><b>^~~~</b></font>
+  CC [M]  aic8800_fdrv/rwnx_irqs.o
+<b>aic8800_fdrv/rwnx_msg_rx.c:1486:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_rx_handle_msg</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1486 | void <font color="#8900FF"><b>rwnx_rx_handle_msg</b></font>(struct rwnx_hw *rwnx_hw, struct ipc_e2a_msg *msg)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_msg_rx.c:1498:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_rx_handle_print</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1498 | void <font color="#8900FF"><b>rwnx_rx_handle_print</b></font>(struct rwnx_hw *rwnx_hw, u8 *msg, u32 len)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~</b></font>
+  CC [M]  aic_load_fw/aicbluetooth_cmds.o
+  CC [M]  aic_load_fw/md5.o
+  CC [M]  aic_load_fw/aicwf_txq_prealloc.o
+  CC [M]  aic8800_fdrv/rwnx_cfgfile.o
+<b>aic_load_fw/aicwf_txq_prealloc.c:13:7:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicwf_prealloc_txq_alloc</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+   13 | void *<font color="#8900FF"><b>aicwf_prealloc_txq_alloc</b></font>(size_t size)
+      |       <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic_load_fw/aicwf_txq_prealloc.c:50:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicwf_prealloc_txq_free</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+   50 | void <font color="#8900FF"><b>aicwf_prealloc_txq_free</b></font>(void)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~</b></font>
+  CC [M]  aic8800_fdrv/rwnx_strs.o
+  CC [M]  aic8800_fdrv/rwnx_rx.o
+<b>aic8800_fdrv/rwnx_irqs.c:21:13:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_irq_hdlr</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+   21 | irqreturn_t <font color="#8900FF"><b>rwnx_irq_hdlr</b></font>(int irq, void *dev_id)
+      |             <font color="#8900FF"><b>^~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_irqs.c:34:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_task</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+   34 | void <font color="#8900FF"><b>rwnx_task</b></font>(unsigned long data)
+      |      <font color="#8900FF"><b>^~~~~~~~~</b></font>
+  CC [M]  aic8800_fdrv/rwnx_tx.o
+  CC [M]  aic8800_fdrv/rwnx_txq.o
+  CC [M]  aic8800_fdrv/rwnx_main.o
+  CC [M]  aic8800_fdrv/rwnx_mod_params.o
+  LD [M]  aic_load_fw/aic_load_fw.o
+  CC [M]  aic8800_fdrv/rwnx_mesh.o
+  CC [M]  aic8800_fdrv/rwnx_platform.o
+  CC [M]  aic8800_fdrv/rwnx_pci.o
+<b>aic8800_fdrv/rwnx_mod_params.c:268:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_get_countrycode_channels</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  268 | void <font color="#8900FF"><b>rwnx_get_countrycode_channels</b></font>(struct wiphy *wiphy,
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_mod_params.c:327:29:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>getRegdomainFromRwnxDBIndex</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  327 | struct ieee80211_regdomain *<font color="#8900FF"><b>getRegdomainFromRwnxDBIndex</b></font>(struct wiphy *wiphy,
+      |                             <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_mod_params.c:347:29:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>getRegdomainFromRwnxDB</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  347 | struct ieee80211_regdomain *<font color="#8900FF"><b>getRegdomainFromRwnxDB</b></font>(struct wiphy *wiphy,
+      |                             <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_rx.c:326:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_rx_data_skb_resend</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  326 | void <font color="#8900FF"><b>rwnx_rx_data_skb_resend</b></font>(struct rwnx_hw *rwnx_hw, struct rwnx_vif *rwnx_vif,
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_txq.c:153:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_txq_flush</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  153 | void <font color="#8900FF"><b>rwnx_txq_flush</b></font>(struct rwnx_hw *rwnx_hw, struct rwnx_txq *txq)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_txq.c:</b> In function ‘<b>rwnx_txq_vif_for_each_sta</b>’:
+<b>aic8800_fdrv/rwnx_txq.c:639:18:</b> <font color="#8900FF"><b>warning: </b></font>this statement may fall through [<font color="#8900FF"><b>-Wimplicit-fallthrough=</b></font>]
+  639 |         <font color="#8900FF"><b>rwnx_vif = rwnx_vif-&gt;ap_vlan.master</b></font>;
+      |         <font color="#8900FF"><b>~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_txq.c:640:5:</b> <font color="#65E6F6"><b>note: </b></font>here
+  640 |     <font color="#65E6F6"><b>case</b></font> NL80211_IFTYPE_AP:
+      |     <font color="#65E6F6"><b>^~~~</b></font>
+<b>aic8800_fdrv/rwnx_rx.c:1365:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>reord_flush_tid</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1365 | int <font color="#8900FF"><b>reord_flush_tid</b></font>(struct aicwf_rx_priv *rx_priv, struct sk_buff *skb, u8 tid)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_rx.c:1576:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>reord_rxframes_process</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1576 | bool <font color="#8900FF"><b>reord_rxframes_process</b></font>(struct aicwf_rx_priv *rx_priv, struct reord_ctrl *preorder_ctrl, int bforced)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_rx.c:1612:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>reord_rxframes_ind</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1612 | void <font color="#8900FF"><b>reord_rxframes_ind</b></font>(struct aicwf_rx_priv *rx_priv,
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_rx.c:1696:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>reord_process_unit</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1696 | int <font color="#8900FF"><b>reord_process_unit</b></font>(struct aicwf_rx_priv *rx_priv, struct sk_buff *skb, u16 seq_num, u8 tid, u8 forward)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_rx.c:1895:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>remove_sec_hdr_mgmt_frame</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1895 | void <font color="#8900FF"><b>remove_sec_hdr_mgmt_frame</b></font>(struct hw_rxhdr *hw_rxhdr,struct sk_buff *skb)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_tx.c:</b> In function ‘<b>rwnx_select_txq</b>’:
+<b>aic8800_fdrv/rwnx_tx.c:323:18:</b> <font color="#8900FF"><b>warning: </b></font>this statement may fall through [<font color="#8900FF"><b>-Wimplicit-fallthrough=</b></font>]
+  323 |         <font color="#8900FF"><b>rwnx_vif = rwnx_vif-&gt;ap_vlan.master</b></font>;
+      |         <font color="#8900FF"><b>~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_tx.c:324:5:</b> <font color="#65E6F6"><b>note: </b></font>here
+  324 |     <font color="#65E6F6"><b>case</b></font> NL80211_IFTYPE_AP:
+      |     <font color="#65E6F6"><b>^~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:530:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_skb_align_8bytes</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  530 | void <font color="#8900FF"><b>rwnx_skb_align_8bytes</b></font>(struct sk_buff *skb){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:597:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_frame_parser</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  597 | void <font color="#8900FF"><b>rwnx_frame_parser</b></font>(char* tag, char* data, unsigned long len){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:1126:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_update_mesh_power_mode</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1126 | void <font color="#8900FF"><b>rwnx_update_mesh_power_mode</b></font>(struct rwnx_vif *vif)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:1666:14:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>command_strtoul</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1666 | unsigned int <font color="#8900FF"><b>command_strtoul</b></font>(const char *cp, char **endp, unsigned int base)
+      |              <font color="#8900FF"><b>^~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:1700:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>handle_private_cmd</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1700 | int <font color="#8900FF"><b>handle_private_cmd</b></font>(struct net_device *net, char *command, u32 cmd_len)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:2391:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>android_priv_cmd</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 2391 | int <font color="#8900FF"><b>android_priv_cmd</b></font>(struct net_device *net, struct ifreq *ifr, int cmd)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~</b></font>
+In file included from <b>aic8800_fdrv/rwnx_defs.h:32</b>,
+                 from <b>aic8800_fdrv/rwnx_main.c:25</b>:
+<b>aic8800_fdrv/rwnx_compat.h:395:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_select_queue</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  395 |     <font color="#8900FF"><b>rwnx_select_queue</b></font>(dev, skb, sb_dev)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:2616:5:</b> <font color="#65E6F6"><b>note: </b></font>in expansion of macro ‘<b>rwnx_select_queue</b>’
+ 2616 | u16 <font color="#65E6F6"><b>rwnx_select_queue</b></font>(struct net_device *dev, struct sk_buff *skb,
+      |     <font color="#65E6F6"><b>^~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:2882:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicwf_p2p_alive_timeout</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 2882 | void <font color="#8900FF"><b>aicwf_p2p_alive_timeout</b></font>(struct timer_list *t)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:3393:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_send_check_p2p</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 3393 | int <font color="#8900FF"><b>rwnx_send_check_p2p</b></font>(struct cfg80211_scan_request *param){
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:4106:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>apm_staloss_work_process</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 4106 | void <font color="#8900FF"><b>apm_staloss_work_process</b></font>(struct work_struct *work)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:4220:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>apm_probe_sta_work_process</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 4220 | void <font color="#8900FF"><b>apm_probe_sta_work_process</b></font>(struct work_struct *work)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:4695:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_cfg80211_probe_client</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 4695 | int <font color="#8900FF"><b>rwnx_cfg80211_probe_client</b></font>(struct wiphy *wiphy, struct net_device *dev,
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:4732:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_cfg80211_mgmt_frame_register</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 4732 | void <font color="#8900FF"><b>rwnx_cfg80211_mgmt_frame_register</b></font>(struct wiphy *wiphy,
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:5371:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_cfg80211_channel_switch</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 5371 | int <font color="#8900FF"><b>rwnx_cfg80211_channel_switch</b></font>(struct wiphy *wiphy,
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:5706:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_cfg80211_change_bss</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 5706 | int <font color="#8900FF"><b>rwnx_cfg80211_change_bss</b></font>(struct wiphy *wiphy, struct net_device *dev,
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:8635:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_ic_system_init</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 8635 | int <font color="#8900FF"><b>rwnx_ic_system_init</b></font>(struct rwnx_hw *rwnx_hw){
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:8662:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_ic_rf_init</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 8662 | int <font color="#8900FF"><b>rwnx_ic_rf_init</b></font>(struct rwnx_hw *rwnx_hw){
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:</b> In function ‘<b>rwnx_cfg80211_mgmt_tx</b>’:
+<b>aic8800_fdrv/rwnx_main.c:5198:22:</b> <font color="#8900FF"><b>warning: </b></font>this statement may fall through [<font color="#8900FF"><b>-Wimplicit-fallthrough=</b></font>]
+ 5198 |             <font color="#8900FF"><b>rwnx_vif = rwnx_vif-&gt;ap_vlan.master</b></font>;
+      |             <font color="#8900FF"><b>~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:5199:9:</b> <font color="#65E6F6"><b>note: </b></font>here
+ 5199 |         <font color="#65E6F6"><b>case</b></font> NL80211_IFTYPE_AP:
+      |         <font color="#65E6F6"><b>^~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:</b> In function ‘<b>rwnx_fill_station_info</b>’:
+<b>aic8800_fdrv/rwnx_main.c:5864:43:</b> <font color="#8900FF"><b>warning: </b></font>this statement may fall through [<font color="#8900FF"><b>-Wimplicit-fallthrough=</b></font>]
+ 5864 |                 <font color="#8900FF"><b>sinfo-&gt;rxrate.he_ru_alloc = rx_vect1-&gt;he.ru_size</b></font>;
+      |                 <font color="#8900FF"><b>~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:5865:9:</b> <font color="#65E6F6"><b>note: </b></font>here
+ 5865 |         <font color="#65E6F6"><b>case</b></font> FORMATMOD_HE_SU:
+      |         <font color="#65E6F6"><b>^~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:</b> In function ‘<b>rwnx_cfg80211_change_iface</b>’:
+<b>aic8800_fdrv/rwnx_main.c:3231:28:</b> <font color="#8900FF"><b>warning: </b></font>this statement may fall through [<font color="#8900FF"><b>-Wimplicit-fallthrough=</b></font>]
+ 3231 |         <font color="#8900FF"><b>vif-&gt;ap.generation = 0</b></font>;
+      |         <font color="#8900FF"><b>~~~~~~~~~~~~~~~~~~~^~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:3233:5:</b> <font color="#65E6F6"><b>note: </b></font>here
+ 3233 |     <font color="#65E6F6"><b>case</b></font> NL80211_IFTYPE_AP:
+      |     <font color="#65E6F6"><b>^~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:</b> In function ‘<b>rwnx_interface_add</b>’:
+<b>aic8800_fdrv/rwnx_main.c:2797:30:</b> <font color="#8900FF"><b>warning: </b></font>this statement may fall through [<font color="#8900FF"><b>-Wimplicit-fallthrough=</b></font>]
+ 2797 |         <font color="#8900FF"><b>vif-&gt;ap.next_mesh_pm = NL80211_MESH_POWER_ACTIVE</b></font>;
+      |         <font color="#8900FF"><b>~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:2799:5:</b> <font color="#65E6F6"><b>note: </b></font>here
+ 2799 |     <font color="#65E6F6"><b>case</b></font> NL80211_IFTYPE_AP:
+      |     <font color="#65E6F6"><b>^~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:</b> At top level:
+<b>aic8800_fdrv/rwnx_main.c:4761:12:</b> <font color="#8900FF"><b>warning: </b></font>‘<b>rwnx_cfg80211_set_tx_power</b>’ defined but not used [<font color="#8900FF"><b>-Wunused-function</b></font>]
+ 4761 | static int <font color="#8900FF"><b>rwnx_cfg80211_set_tx_power</b></font>(struct wiphy *wiphy,
+      |            <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_main.c:4529:12:</b> <font color="#8900FF"><b>warning: </b></font>‘<b>rwnx_cfg80211_change_beacon</b>’ defined but not used [<font color="#8900FF"><b>-Wunused-function</b></font>]
+ 4529 | static int <font color="#8900FF"><b>rwnx_cfg80211_change_beacon</b></font>(struct wiphy *wiphy, struct net_device *dev,
+      |            <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+  CC [M]  aic8800_fdrv/rwnx_dini.o
+<b>aic8800_fdrv/rwnx_platform.c:417:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_request_firmware_common</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  417 | int <font color="#8900FF"><b>rwnx_request_firmware_common</b></font>(struct rwnx_hw *rwnx_hw, u32** buffer, const char *filename)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_platform.c:428:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_release_firmware_common</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  428 | void <font color="#8900FF"><b>rwnx_release_firmware_common</b></font>(u32** buffer)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_platform.c:445:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_plat_bin_fw_upload_2</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  445 | int <font color="#8900FF"><b>rwnx_plat_bin_fw_upload_2</b></font>(struct rwnx_hw *rwnx_hw, u32 fw_addr,
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_platform.c:1453:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_atoi</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1453 | int <font color="#8900FF"><b>rwnx_atoi</b></font>(char *value)
+      |     <font color="#8900FF"><b>^~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_platform.c:1575:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>get_userconfig_xtal_cap</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1575 | void <font color="#8900FF"><b>get_userconfig_xtal_cap</b></font>(xtal_cap_conf_t *xtal_cap)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_platform.c:1584:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_plat_nvram_set_value</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1584 | void <font color="#8900FF"><b>rwnx_plat_nvram_set_value</b></font>(char *command, char *value)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_platform.c:1708:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_plat_userconfig_parsing</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1708 | void <font color="#8900FF"><b>rwnx_plat_userconfig_parsing</b></font>(char *buffer, int size)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+  CC [M]  aic8800_fdrv/rwnx_v7.o
+  CC [M]  aic8800_fdrv/ipc_host.o
+<b>aic8800_fdrv/rwnx_pci.c:85:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_pci_register_drv</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+   85 | int <font color="#8900FF"><b>rwnx_pci_register_drv</b></font>(void)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_pci.c:90:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_pci_unregister_drv</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+   90 | void <font color="#8900FF"><b>rwnx_pci_unregister_drv</b></font>(void)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~</b></font>
+  CC [M]  aic8800_fdrv/rwnx_tdls.o
+  CC [M]  aic8800_fdrv/regdb.o
+  CC [M]  aic8800_fdrv/md5.o
+  CC [M]  aic8800_fdrv/aicwf_compat_8800dc.o
+<b>aic8800_fdrv/rwnx_dini.c:105:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_cfpga_irq_enable</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  105 | int <font color="#8900FF"><b>rwnx_cfpga_irq_enable</b></font>(struct rwnx_hw *rwnx_hw)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_dini.c:129:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_cfpga_irq_disable</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  129 | int <font color="#8900FF"><b>rwnx_cfpga_irq_disable</b></font>(struct rwnx_hw *rwnx_hw)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~</b></font>
+  CC [M]  aic8800_fdrv/rwnx_radar.o
+In file included from <b>/usr/src/linux-headers-6.17.10+kali-common/include/linux/array_size.h:5</b>,
+                 from <b>/usr/src/linux-headers-6.17.10+kali-common/include/linux/kernel.h:16</b>,
+                 from <b>/usr/src/linux-headers-6.17.10+kali-common/include/linux/interrupt.h:6</b>,
+                 from <b>aic8800_fdrv/rwnx_defs.h:16</b>,
+                 from <b>aic8800_fdrv/rwnx_tdls.h:16</b>,
+                 from <b>aic8800_fdrv/rwnx_tdls.c:16</b>:
+<b>aic8800_fdrv/rwnx_tdls.c:</b> In function ‘<b>rwnx_ac_from_wmm</b>’:
+<b>/usr/src/linux-headers-6.17.10+kali-common/include/linux/compiler.h:77:25:</b> <font color="#8900FF"><b>warning: </b></font>this statement may fall through [<font color="#8900FF"><b>-Wimplicit-fallthrough=</b></font>]
+   77 | # define unlikely(x)    <font color="#8900FF"><b>__builtin_expect(!!(x), 0)</b></font>
+      |                         <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>/usr/src/linux-headers-6.17.10+kali-common/include/asm-generic/bug.h:115:9:</b> <font color="#65E6F6"><b>note: </b></font>in expansion of macro ‘<b>unlikely</b>’
+  115 |         <font color="#65E6F6"><b>unlikely</b></font>(__ret_warn_on);                                \
+      |         <font color="#65E6F6"><b>^~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_tdls.c:265:17:</b> <font color="#65E6F6"><b>note: </b></font>in expansion of macro ‘<b>WARN_ON_ONCE</b>’
+  265 |                 <font color="#65E6F6"><b>WARN_ON_ONCE</b></font>(1);
+      |                 <font color="#65E6F6"><b>^~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_tdls.c:266:9:</b> <font color="#65E6F6"><b>note: </b></font>here
+  266 |         <font color="#65E6F6"><b>case</b></font> 0:
+      |         <font color="#65E6F6"><b>^~~~</b></font>
+  CC [M]  aic8800_fdrv/rwnx_debugfs.o
+  CC [M]  aic8800_fdrv/rwnx_fw_trace.o
+  CC [M]  aic8800_fdrv/usb_host.o
+  CC [M]  aic8800_fdrv/aicwf_txrxif.o
+<b>aic8800_fdrv/aicwf_compat_8800dc.c:1714:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicwf_patch_table_load</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1714 | int <font color="#8900FF"><b>aicwf_patch_table_load</b></font>(struct rwnx_hw *rwnx_hw, char *filename)
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/aicwf_compat_8800dc.c:1774:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicwf_patch_config_8800dc</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1774 | void <font color="#8900FF"><b>aicwf_patch_config_8800dc</b></font>(struct rwnx_hw *rwnx_hw)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/aicwf_compat_8800dc.c:1927:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicwf_set_rf_config_8800dc</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1927 | int <font color="#8900FF"><b>aicwf_set_rf_config_8800dc</b></font>(struct rwnx_hw *rwnx_hw, struct mm_set_rf_calib_cfm *cfm){
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/aicwf_compat_8800dc.c:1961:5:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicwf_plat_patch_load_8800dc</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1961 | int <font color="#8900FF"><b>aicwf_plat_patch_load_8800dc</b></font>(struct rwnx_hw *rwnx_hw){
+      |     <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/aicwf_compat_8800dc.c:1990:9:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_plat_userconfig_load_8800dc</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1990 | int     <font color="#8900FF"><b>rwnx_plat_userconfig_load_8800dc</b></font>(struct rwnx_hw *rwnx_hw){
+      |         <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/aicwf_compat_8800dc.c:2018:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>system_config_8800dc</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 2018 | void <font color="#8900FF"><b>system_config_8800dc</b></font>(struct rwnx_hw *rwnx_hw){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~</b></font>
+  CC [M]  aic8800_fdrv/aicwf_usb.o
+<b>aic8800_fdrv/rwnx_radar.c:900:22:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>pri_detector_init</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  900 | struct pri_detector *<font color="#8900FF"><b>pri_detector_init</b></font>(struct dfs_pattern_detector *dpd,
+      |                      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/usb_host.c:35:30:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicwf_usb_host_txdesc_get</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+   35 | volatile struct txdesc_host *<font color="#8900FF"><b>aicwf_usb_host_txdesc_get</b></font>(struct usb_host_env_tag *env, const int queue_idx)
+      |                              <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/rwnx_debugfs.c:</b> In function ‘<b>rwnx_dbgfs_rc_fixed_rate_idx_write</b>’:
+<b>aic8800_fdrv/rwnx_debugfs.c:1753:13:</b> <font color="#8900FF"><b>warning: </b></font>the comparison will always evaluate as ‘<b>false</b>’ for the address of ‘<b>mac</b>’ will never be NULL [<font color="#8900FF"><b>-Waddress</b></font>]
+ 1753 |     if (mac <font color="#8900FF"><b>==</b></font> NULL)
+      |             <font color="#8900FF"><b>^~</b></font>
+<b>aic8800_fdrv/rwnx_debugfs.c:1740:8:</b> <font color="#65E6F6"><b>note: </b></font>‘<b>mac</b>’ declared here
+ 1740 |     u8 <font color="#65E6F6"><b>mac</b></font>[6];
+      |        <font color="#65E6F6"><b>^~~</b></font>
+<b>aic8800_fdrv/rwnx_debugfs.c:</b> At top level:
+<b>aic8800_fdrv/rwnx_debugfs.c:2095:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>_rwnx_dbgfs_rc_stat_write</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 2095 | void <font color="#8900FF"><b>_rwnx_dbgfs_rc_stat_write</b></font>(struct rwnx_debugfs *rwnx_debugfs, uint8_t sta_idx)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/aicwf_usb.c:148:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_stop_sta_all_queues</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  148 | void <font color="#8900FF"><b>rwnx_stop_sta_all_queues</b></font>(struct rwnx_sta *sta, struct rwnx_hw *rwnx_hw)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/aicwf_usb.c:158:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>rwnx_wake_sta_all_queues</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+  158 | void <font color="#8900FF"><b>rwnx_wake_sta_all_queues</b></font>(struct rwnx_sta *sta, struct rwnx_hw *rwnx_hw)
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+<b>aic8800_fdrv/aicwf_usb.c:1616:6:</b> <font color="#8900FF"><b>warning: </b></font>no previous prototype for ‘<b>aicwf_usb_cancel_all_urbs</b>’ [<font color="#8900FF"><b>-Wmissing-prototypes</b></font>]
+ 1616 | void <font color="#8900FF"><b>aicwf_usb_cancel_all_urbs</b></font>(struct aic_usb_dev *usb_dev){
+      |      <font color="#8900FF"><b>^~~~~~~~~~~~~~~~~~~~~~~~~</b></font>
+  LD [M]  aic8800_fdrv/aic8800_fdrv.o
+  MODPOST Module.symvers
+  CC [M]  aic_load_fw/aic_load_fw.mod.o
+  CC [M]  aic8800_fdrv/aic8800_fdrv.mod.o
+  LD [M]  aic_load_fw/aic_load_fw.ko
+  LD [M]  aic8800_fdrv/aic8800_fdrv.ko
+  BTF [M] aic_load_fw/aic_load_fw.ko
+  BTF [M] aic8800_fdrv/aic8800_fdrv.ko
+make[2]: Leaving directory &apos;/AIC8800/drivers/aic8800&apos;
+make[1]: Leaving directory &apos;/usr/src/linux-headers-6.17.10+kali-amd64&apos;
+You have new mail in /var/mail/syn2k
+
+<font color="#57E389">┌──(</font><font color="#277FFF"><b>syn2k㉿redb0x</b></font><font color="#57E389">)-[</font><b>/AIC8800/drivers/aic8800</b><font color="#57E389">]</font>
+<font color="#57E389">└─</font><font color="#277FFF"><b>$</b></font> 
+</pre>

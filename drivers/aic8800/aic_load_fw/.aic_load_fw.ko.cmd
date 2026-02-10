@@ -1,0 +1,1 @@
+savedcmd_aic_load_fw/aic_load_fw.ko := x86_64-linux-gnu-ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.17.10+kali-amd64/arch/x86/module.lds -o aic_load_fw/aic_load_fw.ko aic_load_fw/aic_load_fw.o aic_load_fw/aic_load_fw.mod.o .module-common.o
