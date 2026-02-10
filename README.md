@@ -1,10 +1,10 @@
 # AIC8800 Linux Driver (amd64)
 
-Out-of-tree AIC8800 Wi-Fi/BT driver tree patched to compile on newer Linux 6.17+ kernels on `amd64` (`x86_64`).
+A repo for the Wi-Fi driver tree patched to compile on newer Linux 6.17+ kernels on `amd64` (`x86_64`).
 
 ## Background
 
-The manufacturer-provided Linux package is distributed as a `.deb` that targets older kernels and is obsolete for modern `linux64` systems. This repo was created by extracting that Debian package and applying compatibility patches so it builds and runs on Debian-based 64-bit systems on Linux 6.17+.
+The manufacturer-provided Linux package (https://www.fenvi.com/drive.html?keyword=WIFI+6+AX286) is distributed as a `.deb` that targets older kernels and is obsolete for modern linux systems. This repo was created by extracting that Debian package and applying compatibility patches so it builds and runs on Debian-based 64-bit systems on Linux 6.17+.
 
 This repo includes:
 - Kernel modules under `drivers/aic8800/`
@@ -27,7 +27,7 @@ sudo apt install -y build-essential linux-headers-$(uname -r)
 
 ## Firmware Install (AIC8800DC)
 
-The driver uses a firmware path provided by the `aic_load_fw` module parameter `aic_fw_path`.
+The driver uses a firmware path provided by the `aic_load_fw` module parameter
 
 Recommended layout:
 
