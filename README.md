@@ -2,6 +2,10 @@
 
 Out-of-tree AIC8800 Wi-Fi/BT driver tree patched to compile on newer Linux 6.17+ kernels on `amd64` (`x86_64`).
 
+## Background
+
+The manufacturer-provided Linux package is distributed as a `.deb` that targets older kernels and is obsolete for modern `linux64` systems. This repo was created by extracting that Debian package and applying compatibility patches so it builds and runs on Debian-based 64-bit systems on Linux 6.17+.
+
 This repo includes:
 - Kernel modules under `drivers/aic8800/`
   - `aic_load_fw`: helper module (exports `get_fw_path()` / `testmode`, etc.)
